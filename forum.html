@@ -1,0 +1,7 @@
+<script>
+    function createTextfile() {
+        const fileContent = "A file content"
+        const blob = new blob([fileContent], {type: "text/plain;charrset=utf-8"});
+        saveAs(blob, "download.txt");
+    }
+</script>
